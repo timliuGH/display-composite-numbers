@@ -21,6 +21,7 @@ FIRST_NUM = 4			; First composite number is 4
 NUM_PER_LINE = 10		; Number of composites allowed per line
 LINES_PER_PAGE = 30		; Number of lines allowed to display per page (Extra Credit #2)
 INVALID_NUM = 0			; Value for invalid input
+ARRAY_SIZER = 1371		; This value plus two is max size of array holding primes
 
 .data
 progIntro		BYTE	"Composite Numbers", 9h, "Programmed by "
@@ -40,7 +41,7 @@ promptText		BYTE	"Enter the number of composites to "
 				BYTE	"display [1 .. 10000]: ", 0					; Prompt user for value
 numTerms		DWORD	?											; Number of composite numbers provided by user
 invalidText		BYTE	"Out of range. Try again.", 0dh, 0ah, 0		; Text for out-of-range input
-arrayPrime		DWORD	2, 3, 1371 DUP(?)							; Array of prime numbers, starting with 2 and 3 (Extra Credit #3)
+arrayPrime		DWORD	2, 3, ARRAY_SIZER DUP(?)							; Array of prime numbers, starting with 2 and 3 (Extra Credit #3)
 arraySize		DWORD	2											; Number of primes stored in array (Extra Credit #3)
 numOnLine		BYTE	0											; Counter for number of values on current line
 lineNum			BYTE	0											; Counts number of lines printed (Extra Credit #2)
