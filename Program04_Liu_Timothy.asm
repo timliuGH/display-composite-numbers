@@ -2,9 +2,6 @@ TITLE Composite Numbers     (Program04_Liu_Timothy.asm)
 
 ; Author: Timothy Liu
 ; Last Modified: November 3, 2018
-; OSU email address: liutim@oregonstate.edu
-; Course number/section: CS_271_400_F2018
-; Project Number: 04                Due Date: November 4, 2018
 ; Description: This program will introduce the program and programmer, prompt the user for
 ;   a number from 1 to 10000, inclusive, verify that the number is in range, calculate and
 ;   display that many composite numbers, and say farewell.
